@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+        tools:context=".ClientLoginRegisterActivity"
+    >
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="273dp">
+
+   <ImageView
+       android:layout_width="77dp"
+       android:layout_height="77dp"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="93dp">
+
+   </ImageView>
+
+  </FrameLayout>
+  <TextView
+      android:id="@+id/keeper_status"
+      android:layout_marginTop="12dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:textAlignment="center"
+      android:text="Login for requesting service"
+      android:fontFamily="@font/poppins_medium"
+      android:textColor="#ffffff"
+
+      android:textSize="10.5sp" />
+
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="62dp"
+      android:layout_marginTop="36.7dp"
+      android:layout_marginRight="62dp"
+      android:background="@drawable/blue_border_rounded_cornwe">
+
+
+
+
+   <EditText
+       android:id="@+id/email_client"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       android:background="@android:color/transparent"
+       android:fontFamily="@font/poppins_regular"
+       android:hint="Email"
+       android:inputType="textEmailAddress"
+       android:maxLines="1"
+       android:paddingLeft="55dp"
+       android:paddingTop="15dp"
+       android:paddingBottom="15dp"
+       android:textCursorDrawable="@drawable/cursor_color"
+       android:textSize="12sp" />
+
+   <ImageView
+    android:id="@+id/username_icon"
+       android:layout_width="14.7dp"
+       android:layout_height="10.3dp"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="17dp"
+       android:src="@drawable/email">
+
+   </ImageView>
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="62dp"
+      android:layout_marginTop="36.7dp"
+      android:layout_marginRight="62dp"
+      android:background="@drawable/blue_border_rounded_cornwe">
+
+
+   <EditText
+       android:id="@+id/password_client"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       android:background="@android:color/transparent"
+       android:fontFamily="@font/poppins_regular"
+       android:hint="Password"
+       android:inputType="textPassword"
+       android:maxLines="1"
+       android:paddingLeft="55dp"
+       android:paddingTop="15dp"
+       android:paddingBottom="15dp"
+       android:textCursorDrawable="@drawable/cursor_color"
+       android:textSize="12sp" />
+
+   <ImageView
+       android:id="@+id/icon"
+       android:layout_width="14.7dp"
+       android:layout_height="10.3dp"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="17dp"
+       android:src="@drawable/password">
+
+   </ImageView>
+  </RelativeLayout>
+
+  <Button
+  android:id="@+id/client_login_btn"
+      android:gravity="center"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/password_client"
+
+  android:text="Login"
+      android:layout_marginRight="62dp"
+      android:layout_marginLeft="62dp"
+      android:layout_marginTop="18.7dp"
+      android:background="@drawable/blue_fill__rounded_color"
+      android:fontFamily="@font/poppins_medium"
+
+      android:paddingTop="14dp"
+      android:paddingBottom="14dp"
+  android:textColor="#ffffff"
+  android:textSize="12sp" />
+  <TextView
+      android:id="@+id/register_client_link"
+      android:layout_marginTop="12dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:textAlignment="center"
+      android:text="Don't have an Account?"
+      android:fontFamily="@font/poppins_medium"
+      android:textColor="#ffffff"
+
+      android:textSize="10.5sp" />
+  <Button
+      android:id="@+id/client_register_btn"
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/password_client"
+
+      android:text="Register"
+      android:layout_marginRight="62dp"
+      android:layout_marginLeft="62dp"
+      android:layout_marginTop="18.7dp"
+      android:background="@drawable/blue_fill__rounded_color"
+      android:fontFamily="@font/poppins_medium"
+
+      android:paddingTop="14dp"
+      android:paddingBottom="14dp"
+      android:textColor="#ffffff"
+      android:textSize="12sp" />
+
+ </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+<!--<TextView-->
+<!--android:id="@+id/keeper_status"-->
+<!--android:layout_marginTop="50dp"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_centerInParent="true"-->
+<!--android:text="Login for requesting service"-->
+<!--android:textColor="#EFE6E6"-->
+
+<!--android:textColorHighlight="#F1EAEA"-->
+<!--android:textSize="12sp" />-->
+
+<!--<EditText-->
+<!--android:id="@+id/email_client"-->
+<!--android:layout_marginTop="20dp"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_below="@id/keeper_status"-->
+<!--android:layout_centerHorizontal="true"-->
+<!--android:background="@color/black"-->
+<!--android:ems="10"-->
+<!--android:hint="Email"-->
+<!--android:inputType="textEmailAddress"-->
+<!--android:textColor="@color/white"-->
+<!--android:textColorHint="@color/white" />-->
+
+<!--<EditText-->
+<!--android:id="@+id/password_client"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_below="@id/email_client"-->
+<!--android:layout_marginTop="20dp"-->
+<!--android:layout_centerHorizontal="true"-->
+<!--android:background="@color/black"-->
+<!--android:ems="10"-->
+<!--android:hint="Password"-->
+<!--android:inputType="textPassword"-->
+<!--android:textColor="@color/white"-->
+<!--android:textColorHint="@color/white" />-->
+
+<!--<Button-->
+<!--android:id="@+id/client_login_btn"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_below="@id/password_client"-->
+<!--android:layout_centerInParent="true"-->
+<!--android:text="Login"-->
+<!--android:textColor="#000000"-->
+<!--app:backgroundTint="#632BC8" />-->
+
+<!--<TextView-->
+<!--android:id="@+id/register_client_link"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_below="@id/client_login_btn"-->
+<!--android:layout_centerHorizontal="true"-->
+<!--android:text="Don't have an Account?"-->
+<!--android:textColor="#DCD9D9" />-->
+
+<!--<Button-->
+<!--android:id="@+id/client_register_btn"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_below="@id/register_client_link"-->
+<!--android:layout_centerHorizontal="true"-->
+<!--android:layout_marginTop="1dp"-->
+<!--android:text="Register"-->
+<!--android:textColor="#DCD9D9" />-->
